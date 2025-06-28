@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "Your Trusted Healthcare Professionals",
+    "description": "A responsive React app to showcase top doctors with profiles, specializations, and availability.",
+    "tech": ["React", "Firebase", "Stripe", "Tailwind"],
+    "github": "https://github.com/Royel500/All_Doctors.git",
+    "live": "https://tranquil-pothos-01e2ab.netlify.app/",
+    "image": "https://i.postimg.cc/JzGKjZYF/Screenshot-2025-06-28-222609.png",
+    "challenge": "Integrating Stripe for secure payments and handling different error responses from the API was tricky and required reading a lot of documentation."
+  },
+  {
+    "id": 2,
+    "title": "Gardening Tips App",
+    "description": "A platform where gardeners can share tips. Features login, CRUD operations, and public/private tip visibility. Built with MongoDB and Express.",
+    "tech": ["React", "Express", "MongoDB", "DaisyUI"],
+    "github": "https://github.com/Royel500/Prjects.git",
+    "live": "https://assignment-rs-10.web.app",
+    "image": "https://i.postimg.cc/85c262G8/Screenshot-2025-06-28-215136.png",
+    "challenge": "Building a secure system for public vs private tips and making sure user-based access control worked correctly across CRUD operations."
+
+  },
+  {
+    "id": 3,
+    "title": "Assignment Portal",
+    "description": "A student-teacher assignment management system. Teachers can create, view, and mark assignments. Students can submit via Google Docs links.",
+    "tech": ["React", "MongoDB", "Firebase", "React Router"],
+    "github": "https://github.com/Royel500/Assignment_11.git",
+    "live": "https://assignment-11-c11e7.web.app",
+    "image": "https://i.postimg.cc/T16PGVFH/Screenshot-2025-06-28-220504.png",
+    "challenge": "Making sure teachers couldn't mark their own submissions and handling real-time data syncing between roles was a fun challenge."
+  },
+ {
+  "id": 4,
+  "title": "Dragon News",
+  "description": "A modern news portal built with React, React Router, and Firebase authentication. It allows users to read news articles, view categories, and log in to access premium content.",
+  "tech": ["React", "React Router", "Firebase", "Bootstrap", "Context API"],
+  "github": "https://github.com/Royel500/Dragon-News.git",
+  "live": "https://dragon-news-cea9e.web.app/",
+  "image": "https://i.postimg.cc/SRTHVq67/Screenshot-2025-06-28-220845.png",
+  "challenge": "Setting up protected routes for premium content and integrating Firebase authentication with route-level access control was a key learning experience."
+}
+]
