@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <section className="min-h-screen my-15 bg-gray-50 py-12 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-800 mb-10 text-center">My Projects</h2>
+        <h2 className="text-4xl font-bold text-gray-800 italic underline mb-10 text-center">My Projects</h2>
         <div className="flex flex-col gap-10">
           {projectList.map((project, index) => (
             <ProjectCard key={index} project={project} />

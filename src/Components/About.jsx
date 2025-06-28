@@ -59,8 +59,8 @@ const About = () => {
 
       </section>
       <div className='lg:mx-20 my-15' >
-           <h2 className="text-4xl  font-bold text-center text-gray-800 mb-12"> 
-            Educational Background :
+           <h2 className="text-4xl  font-bold text-center italic underline text-gray-800 mb-12"> 
+            Educational Background 
             </h2>
           <p className="text-gray-600 text-lg mb-4 max-w-4xl mx-auto space-y-8">
   # I’ve completed my Higher Secondary Certificate (HSC) <br />
