@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import photo from '/Portfolio.jpg'
+import Experience from './Experience';
 const skills = [
   'HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS',
   'Node.js', 'Express.js', 'MongoDB', 'Firebase Auth',
@@ -36,10 +37,7 @@ const About = () => {
           <p className="text-gray-600 text-lg mb-6">
             I work comfortably across both frontend and backend technologies, and I’m always learning new tools to improve my craft.
           </p>
-          <h1 className='text-[20px] font-bold'>Educational Background :</h1>
-          <p className="text-gray-600 text-lg mb-4">
-  I’ve completed my Higher Secondary Certificate (HSC) and I’m currently pursuing a Bachelor of Social Science (BSS) degree. Alongside my academic studies, I’ve developed a strong interest and skillset in full stack web development.
-</p>
+         
 
           {/* Skill Tags */}
           <div className='text-2xl font-bold mt-10 mb-5'>
@@ -56,6 +54,24 @@ const About = () => {
             ))}
           </div>
         </motion.div>
+      </div>
+      <section>
+
+      </section>
+      <div className='lg:mx-20 my-15' >
+           <h2 className="text-4xl  font-bold text-center text-gray-800 mb-12"> 
+            Educational Background :
+            </h2>
+          <p className="text-gray-600 text-lg mb-4 max-w-4xl mx-auto space-y-8">
+  # I’ve completed my Higher Secondary Certificate (HSC) <br />
+   # Now I’m currently pursuing a Bachelor of Social Science (BSS) degree. <br />
+#  Alongside my academic studies,
+   I’ve developed a strong interest and skillset in full stack web development.
+</p>
+      </div>
+
+      <div>
+        <Experience></Experience>
       </div>
     </section>
   );

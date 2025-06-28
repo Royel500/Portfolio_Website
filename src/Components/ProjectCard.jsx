@@ -44,7 +44,7 @@ const ProjectCard = ({project}) => {
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-gray-700 hover:text-black transition"
+            className="flex items-center gap-2 border text-gray-700 hover:text-black transition"
           >
             <Github size={20} />
             GitHub
@@ -60,7 +60,7 @@ const ProjectCard = ({project}) => {
             </a>
           )}
           <Link to= {`/details/${id}`} >
-             <button className='btn btn-primary'>
+             <button className='px-8 py-2 bg-indigo-600 text-white text-sm rounded-xl hover:bg-indigo-700 transition'>
             view
           </button>
           </Link>
