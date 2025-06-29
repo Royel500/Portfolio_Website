@@ -23,7 +23,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="bg-[#E9F6F7] py-14 px-6 rounded-3xl shadow-inner">
+    <section className="bg-[#E9F6F7] py-14 my-10 px-6 rounded-3xl shadow-inner">
       <h2 className="text-3xl md:text-4xl font-bold text-center italic underline text-[#123] mb-10">
         What you will get
       </h2>

@@ -2,11 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import photo from '/Portfolio.jpg'
 import Experience from './Experience';
-const skills = [
-  'HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS',
-  'Node.js', 'Express.js', 'MongoDB', 'Firebase Auth',
-  'React Router', 'Framer Motion', 'GitHub','Frontend', 'Backend', 
-];
+import EducationCard from './Education/EducationCard';
+import EducationJourney from './Education/EducationJourney';
+// const skills = [
+//   'HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS',
+//   'Node.js', 'Express.js', 'MongoDB', 'Firebase Auth',
+//   'React Router', 'Framer Motion', 'GitHub','Frontend', 'Backend', 
+// ];
 
 const About = () => {
   return (
@@ -40,10 +42,10 @@ const About = () => {
          
 
           {/* Skill Tags */}
-          <div className='text-2xl font-bold mt-10 mb-5'>
+          {/* <div className='text-2xl font-bold mt-10 mb-5'>
             My Skills
-          </div>
-          <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+          </div> */}
+          {/* <div className="flex flex-wrap gap-3 justify-center md:justify-start">
             {skills.map((skill, index) => (
               <span
                 key={index}
@@ -52,23 +54,14 @@ const About = () => {
                 {skill}
               </span>
             ))}
-          </div>
+          </div> */}
+      
         </motion.div>
       </div>
       <section>
 
       </section>
-      <div className='lg:mx-20 my-15' >
-           <h2 className="text-4xl  font-bold text-center italic underline text-gray-800 mb-12"> 
-            Educational Background 
-            </h2>
-          <p className="text-gray-600 text-lg mb-4 max-w-4xl mx-auto space-y-8">
-  # I’ve completed my Higher Secondary Certificate (HSC) <br />
-   # Now I’m currently pursuing a Bachelor of Social Science (BSS) degree. <br />
-#  Alongside my academic studies,
-   I’ve developed a strong interest and skillset in full stack web development.
-</p>
-      </div>
+   <EducationJourney></EducationJourney>
 
       <div>
         <Experience></Experience>

@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import photo from '/Portfolio.jpg'
+import { Github, Linkedin, Mail } from 'lucide-react';
+import { Typewriter } from 'react-simple-typewriter';
 
 export const Hero = () => {
   return (
@@ -17,7 +19,21 @@ export const Hero = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Hi, I'm <span className="text-indigo-600">Royel Ali</span>
           </h1>
-          <p className="text-lg text-gray-600 max-w-md mb-6">
+
+          <span className="text-blue-500 text-3xl font-bold ">........
+        <Typewriter
+          words={['Full Stack Developer', 'React Enthusiast', 'Problem Solver']}
+          loop={true}
+          cursor
+          cursorStyle="|"
+          typeSpeed={70}
+          deleteSpeed={50}
+          delaySpeed={1000}
+        />
+      </span>
+
+
+          <p className="text-lg text-gray-600 max-w-md my-6">
             A passionate Full Stack Web Developer specializing in building modern, responsive applications using React, Node.js, and MongoDB.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
@@ -33,6 +49,31 @@ export const Hero = () => {
             >
               Contact Me
             </Link>
+
+            <div className="flex space-x-6 border rounded py-2 px-2">
+          <a
+            href="https://github.com/Royel500"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-indigo-600 transition"
+          >
+            <Github />
+          </a>
+          <a
+            href="https://linkedin.com/in/your-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-indigo-600 transition"
+          >
+            <Linkedin />
+          </a>
+        <a href="mailto:webdev.royelali@gmail.com" class="text-blue-500 underline">
+
+
+
+            <Mail />
+          </a>
+        </div>
           </div>
         </motion.div>
 

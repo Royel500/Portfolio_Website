@@ -6,6 +6,7 @@ import ProjectCard from '../Components/ProjectCard';
 import Projects from '../Components/Projects';
 import Features from '../Components/Feature';
 import IntentionMarquee from '../Components/Marque';
+import TechnicalSkills from '../Components/TechnicalSkills';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
    <Hero></Hero>
    {/* <ProjectCard></ProjectCard> */}
    <Projects></Projects>
+   <TechnicalSkills></TechnicalSkills>
    <Features></Features>
    <About></About>
 
