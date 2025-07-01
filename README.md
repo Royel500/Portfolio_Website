@@ -7,7 +7,7 @@ This site showcases my skills, projects, education journey, and professional exp
 
 ## 🚀 Live Website
 
-👉 [Visit Portfolio](deluxe-melba-c4d69e.netlify.app)
+Live Link = deluxe-melba-c4d69e.netlify.app
 
 ---
 
@@ -47,11 +47,6 @@ I love building user-friendly web applications with clean code and creative desi
 - 🐱 GitHub: [github.com/Royel500](https://github.com/Royel500)
 
 ---
-
-## 📸 Screenshots
-
-> Add some preview images here if you want  
-> Like: `![Homepage Screenshot](./screenshot.png)`
 
 ---
 
