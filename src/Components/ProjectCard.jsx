@@ -42,7 +42,7 @@ const ProjectCard = ({project}) => {
         </div>
 
         {/* Buttons */}
-        <div className="flex gap-4 mt-2">
+        <div className="flex gap-2 mt-2">
           <a
             href={github}
             target="_blank"
@@ -57,15 +57,16 @@ const ProjectCard = ({project}) => {
               href={live}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-2 py-2 flex bg-indigo-600 text-white text-sm rounded hover:bg-green-700 transition"
+              className=" p-2 flex bg-indigo-600 text-white text-sm rounded hover:bg-green-700 transition"
             > <MdCallMissedOutgoing size={20} />
               Live Demo
             </a>
           )}
           <Link to= {`/details/${id}`} >
-             <button className='px-3 flex py-2 gap-2 bg-indigo-600 text-white text-sm rounded hover:bg-sky-700 transition'>
+ <button className='p-3 flex  gap-2 bg-indigo-600 text-white text-sm rounded
+  hover:bg-sky-700 transition'>
               <FaEye size={20} />
-            view
+            view more
           </button>
           </Link>
        
