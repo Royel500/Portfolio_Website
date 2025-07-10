@@ -7,7 +7,7 @@ This site showcases my skills, projects, education journey, and professional exp
 
 ## 🚀 Live Website
 
-👉 [Visit Portfolio](deluxe-melba-c4d69e.netlify.app)
+👉 [Visit Portfolio](https://deluxe-melba-c4d69e.netlify.app)
 
 ---
 
