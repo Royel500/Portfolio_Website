@@ -7,7 +7,7 @@ This site showcases my skills, projects, education journey, and professional exp
 
 ## 🚀 Live Website
 
-👉 [Visit Portfolio](gentle-bonbon-835bcf.netlify.app)
+👉 [Visit Portfolio](https://gentle-bonbon-835bcf.netlify.app/)
 
 ---
 
