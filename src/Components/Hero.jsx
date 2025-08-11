@@ -7,7 +7,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 export const Hero = () => {
   return (
- <section className="min-h-screen bg-white flex items-center justify-center px-6">
+ <section className=" flex items-center justify-center py-15 px-6">
       <div className="max-w-5xl w-full flex flex-col-reverse md:flex-row items-center gap-10">
         {/* Text Content */}
         <motion.div
@@ -16,7 +16,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-red-200 mb-4">
             Hi, I'm <span className="text-indigo-600">Royel Ali</span>
           </h1>
 
@@ -33,41 +33,47 @@ export const Hero = () => {
       </span>
 
 
-          <p className="text-lg text-gray-600 max-w-md my-6">
-            A passionate Full Stack Web Developer specializing in building modern, responsive applications using React, Node.js, and MongoDB.
+          <p className="text-lg text-white max-w-md my-6">
+            A passionate Full Stack Web Developer Focus On Frontend Developer specializing in building modern, responsive applications using React, Node.js, and MongoDB.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
             <Link
               to="/projects"
-              className="px-6 py-2 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition"
+     className="px-6 py-2 bg-indigo-500 border text-white rounded-xl  hover:bg-indigo-700 transition"
             >
               View Projects
             </Link>
-            <Link
-              to="/contact"
-              className="px-6 py-2 border border-indigo-600 text-indigo-600 rounded-xl hover:bg-indigo-50 transition"
+            <div
+             
+      className="px-6 py-2 border bg-indigo-500 text-white rounded-xl  transition"
             >
-              Contact Me
-            </Link>
+            <a
+          href="./public/Resume.pdf"
+          download="Royel_Resume.pdf" 
+        >
+          Download Resume
+        </a>
+            </div>
 
-            <div className="flex space-x-6 border rounded py-2 px-2">
+            <div className="flex justify-center text-white bg-indigo-500 items-center space-x-6 border rounded-xl py-2 px-2">
           <a
             href="https://github.com/Royel500"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-600 transition"
+            className="hover:text-red-600  text-white transition"
           >
             <Github />
           </a>
           <a
-            href="https://linkedin.com/in/your-link"
+            href="www.linkedin.com/in/royel-ali-733a92379"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-600 transition"
+            className="hover:text-red-600 text-white transition"
           >
             <Linkedin />
           </a>
-        <a href="mailto:webdev.royelali@gmail.com" class="text-blue-500 underline">
+        <a href="mailto:webdev.royelali@gmail.com" 
+        class="text-white hover:text-red-600  underline">
 
 
 

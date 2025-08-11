@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 left-0 w-full z-50">
+    <nav className="bg-white sticky top-0 z-9999 shadow-md    w-full ">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex">
@@ -41,7 +41,7 @@ const Navbar = () => {
       }}
     >
     
-    RSE_Power
+    Portfolio
     </motion.label>
           {/* <h1 className="text-2xl font-bold text-indigo-600 cursor-pointer">
           
@@ -69,7 +69,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           {/* Resume button - hidden on mobile */}
       <a
-  href="https://drive.google.com/file/d/17I8aNvHcyzi4x9JUOs1e2bJt1SGisml_/view?usp=sharing"
+  href="https://drive.google.com/file/d/1BrTg2q2esSum0FJKOrNA-FYHxj5Js_Dt/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="hidden md:inline-block px-4 py-2 border bg-green-600 text-white hover:shadow-xl rounded hover:bg-indigo-600 hover:text-white transition"

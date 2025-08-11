@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Details = () => {
   const { id } = useParams(); // Get current ID from URL
@@ -37,7 +38,11 @@ const Details = () => {
   }
 
   return (
-    <div className="min-h-screen my-15  px-6 py-12 bg-white max-w-5xl mx-auto">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 10, y: 10 }}
+          transition={{ duration: 1 }}
+    className="min-h-screen z-0 mt-30 rounded px-6 py-12 bg-white max-w-5xl mx-auto">
       <Link
         to="/projects"
         className="text-indigo-600 hover:underline text-[25px] mb-4 inline-block"
@@ -53,7 +58,7 @@ const Details = () => {
         />
 
         <div className="p-6 flex-1">
-            <h1 className='font-bold '> Title :</h1>
+           
           <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
           <h1 className='font-bold '>Description:</h1>
           <p className="text-gray-700 mb-4">{project.description}</p>
@@ -93,7 +98,7 @@ const Details = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

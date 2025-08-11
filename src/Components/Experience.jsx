@@ -33,19 +33,19 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="bg-white py-16 px-6">
-      <h2 className="text-4xl font-bold text-center italic underline text-gray-800 mb-12">
+    <section className=" text-white py-2 px-6">
+      <h2 className="text-4xl font-bold text-center italic  mb-12">
         Experience
       </h2>
 
       <div className="max-w-4xl mx-auto space-y-8">
         {experiences.map((exp) => (
-          <div key={exp.id} className="flex gap-4 items-start">
+          <div key={exp.id} className="flex  text-white gap-4 items-start">
             <div className="text-indigo-600">{exp.icon}</div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-800">{exp.role}</h3>
-              <p className="text-gray-600 italic">{exp.company} — {exp.period}</p>
-              <p className="text-gray-700 mt-2">{exp.description}</p>
+              <h3 className="text-xl font-semibold">{exp.role}</h3>
+              <p className=" italic">{exp.company} — {exp.period}</p>
+              <p className=" mt-2">{exp.description}</p>
             </div>
           </div>
         ))}

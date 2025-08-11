@@ -33,7 +33,7 @@ const Footer = () => {
       }}
     >
     
-    RSE_Power
+    Portfolio
     </motion.label>
           {/* <h1 className="text-2xl font-bold text-indigo-600 cursor-pointer">
           

@@ -12,34 +12,44 @@ import EducationJourney from './Education/EducationJourney';
 
 const About = () => {
   return (
-    <section className="min-h-screen my-15 bg-white py-12 px-6">
+    <section className=" pt-20 px-6">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         
         {/* Image (Optional) */}
         <motion.img
           src={photo} // Replace with your image
           alt="Royel Ali"
-          className="w-64 h-64 rounded-2xl shadow-lg object-cover"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
+          className="w-80 h-100 rounded-2xl shadow-lg object-cover"
+          initial={{ opacity: 20, y: 60 }}
+          animate={{ opacity: 21, y: 10 }}
+          transition={{ duration: 1 }}
         />
 
         {/* Text Section */}
         <motion.div
           className="flex-1 text-center md:text-left"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 20, y: 60 }}
+          animate={{ opacity: 21, y: 10 }}
+          transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
-          <p className="text-gray-600 text-lg mb-4">
-            I'm Royel Ali, a dedicated Full Stack Web Developer from Bangladesh. I love building modern, scalable, and user-friendly web applications. My focus is on combining clean code with beautiful design to solve real-world problems.
-          </p>
-          <p className="text-gray-600 text-lg mb-6">
-            I work comfortably across both frontend and backend technologies, and I’m always learning new tools to improve my craft.
-          </p>
-         
+          <h2 className="text-4xl font-bold text-white  mb-4">About Me</h2>
+         <div className="space-y-4 mx-5 font-semibold text-justify">
+  <p className="text-white text-lg">
+    I'm Royel Ali, a dedicated Full Stack Web Developer from Bangladesh with a Bachelor of Science (BSc) degree. Currently, I'm working at [Chemical Company Name] as a [Your Designation], where I combine my technical skills with industry-specific knowledge.
+  </p>
+  
+  <p className="text-white text-lg">
+    My passion lies in building modern, scalable, and user-friendly web applications. I thrive on transforming complex problems into elegant digital solutions, bridging the gap between chemical industry expertise and cutting-edge web technologies.
+  </p>
+  
+  <p className="text-white text-lg">
+    While working in the chemical sector, I've developed a unique perspective that allows me to create specialized web solutions for industrial applications. My technical toolkit spans both frontend and backend technologies, and I'm continuously expanding my skills to stay at the forefront of web development.
+  </p>
+  
+  <p className="text-white text-lg">
+    What drives me is the opportunity to merge my formal education, professional experience in chemicals, and software development skills to build transformative digital experiences that make a real-world impact.
+  </p>
+</div>
 
           {/* Skill Tags */}
           {/* <div className='text-2xl font-bold mt-10 mb-5'>

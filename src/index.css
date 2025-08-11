@@ -1,0 +1,24 @@
+/* Radial red glow background animation */
+.subtle-red-glow {
+  background: black;
+  background-image: radial-gradient(rgba(255,0,0,0.15) 1%, transparent 15%);
+  background-repeat: repeat;
+  background-size: 4000px 4000px;  /* Increase this value */
+  animation: subtleRedGlow 8s ease-in-out infinite;
+}
+
+@keyframes subtleRedGlow {
+  0%, 100% {
+    background-size: 100px 100px;
+    background-position: 0 0;
+  }
+  50% {
+    background-size: 120px 120px;
+    background-position: 20px 20px;
+  }
+}
+
+.parent:hover .hover-hide {
+  visibility: hidden;
+}
+

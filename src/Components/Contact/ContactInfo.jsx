@@ -33,8 +33,7 @@ const ContactInfo = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r
-     from-green-300 via--400 to-blue-300
+    <div className="bg-
  p-8 rounded-xl  shadow-md">
       <h3 className="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
       <div className="space-y-5">

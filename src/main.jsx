@@ -14,6 +14,7 @@ import About from './Components/About.jsx';
 import Projects from './Components/Projects.jsx';
 import Details from './Components/Details.jsx';
 import ContactSection from './Components/Contact/ContactSection.jsx';
+import GradientBackground from './Components/BackGroundColor.jsx';
 
 
 const router = createBrowserRouter([
@@ -48,8 +49,11 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router} >
+<GradientBackground>
+   <RouterProvider router={router} />
 
-   </RouterProvider>
+</GradientBackground>
+
+ 
   </StrictMode>,
 )

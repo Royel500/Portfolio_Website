@@ -37,24 +37,18 @@ const skills = {
 };
 
 
-//   "additionalSkills": {
-//     "title": "Additional Skills & Knowledge",
- 
-//   }
-
-
 
 const SkillBox = ({ title, color, items }) => (
-  <div className={`rounded-xl hover:shadow-fuchsia-700 transition-transform duration-300 hover:scale-95 p-6 shadow-md  ${color} w-full md:w-auto`}>
+  <div className={`flex flex-col rounded-xl hover:shadow-fuchsia-700 transition-all duration-300 hover:scale-95 p-6 shadow-md ${color} w-full md:w-[300px] h-[320px]`}>
     <h3 className="text-white text-xl font-semibold mb-4">{title}</h3>
-    <div className="grid grid-cols-2 gap-3">
+    <div className="grid grid-cols-2 gap-3 overflow-y-auto flex-grow">
       {items.map((skill, idx) => (
         <div
           key={idx}
-          className="flex  items-center gap-2 bg-white/10 text-white px-3 py-2 rounded-lg text-sm border border-white/20"
+          className="flex items-center gap-2 bg-white/10 text-white px-3 py-2 rounded-lg text-sm border border-white/20"
         >
           <span className="text-xl">{skill.icon}</span>
-          <span>{skill.name}</span>
+          <span className="truncate">{skill.name}</span>
         </div>
       ))}
     </div>
@@ -65,7 +59,7 @@ const TechnicalSkills = () => {
   return (
     <>
    
-    <section className="bg-gray-700 text-white py-16 px-6">
+    <section className=" text-white py-5 px-6">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-blue-400 mb-2">Technical Skills</h2>
         <p className="text-gray-300">
@@ -81,16 +75,22 @@ const TechnicalSkills = () => {
           
       <div>
         {/* <!-- Additional Skills & Knowledge Section --> */}
-<section class="skills-section lg:mx-20 my-10 lg:p-10 p-5 rounded-2xl bg-gray-800 text-white" >
-  <h3 className='text-center mb-2 font-bold'>Additional Skills & Knowledge</h3>
-  <div class="skills-container ">
-    <ul class="skills-list lg:flex gap-3 justify-center items-center ">
+<section class="skills-section lg:mx-20 mx-5  lg:p-10 p-5 rounded-2xl  text-white" >
+  <h3 className='text-center text-2xl mb-2 font-bold'>Additional Skills & Knowledge</h3>
+  <div class="skills-container my-5">
+    <ul  className="grid lg:grid-cols-6 grid-cols-3 gap-6 justify-center items-start">
       <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">ES6+</span> </li>
       <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">REST API</span> </li>
       <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">Responsive Design</span></li>
       <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">Vite</span> </li>
       <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">Postman</span></li>
-      <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">VS Code</span> </li>
+      <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">DOM</span> </li>
+      <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">Context api</span> </li>
+      <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">React Router</span> </li>
+      <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">Strip Payment </span> </li>
+      <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">SweetAlert</span> </li>
+      <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">Axios</span> </li>
+      <li><span class="skill-tag bg-gray-600 rounded-2xl px-2 py-1">Interseptor</span> </li>
     </ul>
   </div>
 </section>
