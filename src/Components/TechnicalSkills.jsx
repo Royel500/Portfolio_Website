@@ -75,7 +75,7 @@ const TechnicalSkills = () => {
           
       <div>
         {/* <!-- Additional Skills & Knowledge Section --> */}
-<section class="skills-section lg:mx-20 mx-5  lg:p-10 p-5 rounded-2xl  text-white" >
+<section class="skills-section lg:mx-20 my-7  lg:p-10  rounded-2xl  text-white" >
   <h3 className='text-center text-2xl mb-2 font-bold'>Additional Skills & Knowledge</h3>
   <div class="skills-container my-5">
     <ul  className="grid lg:grid-cols-6 grid-cols-3 gap-6 justify-center items-start">

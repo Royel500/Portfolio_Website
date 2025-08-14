@@ -9,8 +9,9 @@ const ProjectCard = ({project}) => {
     const {id, title, description, tech, github, live, image} =project;
   return (
     <motion.div
-      className="flex my-15 flex-col md:flex-row bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500
- p-10 rounded-2xl shadow-md overflow-hidden border hover:shadow-xl transition"
+      className="flex my-15 flex-col md:flex-row 
+ p-10 rounded-2xl shadow-md overflow-hidden border
+  hover:shadow-xl bg-base-100 transition"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
@@ -23,10 +24,10 @@ const ProjectCard = ({project}) => {
       />
 
       {/* Text Content */}
-      <div className="flex-1 p-6  text-white flex flex-col justify-between">
+      <div className="flex-1 p-6  t flex flex-col justify-between">
         <div>
-          <h3 className="text-2xl  text-white font-semibold  mb-2">{title}</h3>
-          <p className=" text-white mb-4">{description}</p>
+          <h3 className="text-2xl   font-semibold  mb-2">{title}</h3>
+          <p className=" mb-4">{description}</p>
 
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-2 mb-4">
@@ -47,7 +48,7 @@ const ProjectCard = ({project}) => {
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex  px-2 items-center gap-2 border bg-black rounded hover:bg-pink-700 transition"
+            className="flex  px-2 items-center gap-2 border text-white bg-black rounded hover:bg-pink-700 transition"
           >
             <Github size={20} />
             GitHub

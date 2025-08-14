@@ -125,7 +125,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="flex items-center justify-center w-full bg-purple-300 py-3 px-4 rounded-md hover:bg-blue-700 transition-colors"
+          className="flex items-center justify-center w-full bg-green-400 py-3 px-4 rounded-md hover:bg-blue-700 transition-colors"
         >
           <FiSend className="mr-2" />
           Send Message

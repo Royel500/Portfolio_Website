@@ -17,10 +17,10 @@ export const Hero = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold text-red-200 mb-4">
-            Hi, I'm <span className="text-indigo-600">Royel Ali</span>
+            Hi, I'm <span className="text-green-600">Royel Ali</span>
           </h1>
 
-          <span className="text-blue-500 text-3xl font-bold ">........
+          <span className="text-white text-3xl font-bold ">........
         <Typewriter
           words={['Full Stack Developer', 'React Enthusiast', 'Problem Solver']}
           loop={true}
@@ -33,9 +33,75 @@ export const Hero = () => {
       </span>
 
 
-          <p className="text-lg text-white max-w-md my-6">
-            A passionate Full Stack Web Developer Focus On Frontend Developer specializing in building modern, responsive applications using React, Node.js, and MongoDB.
-          </p>
+         <motion.p
+      className="text-lg text-white max-w-2xl my-6 leading-relaxed"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      🚀 A passionate{" "}
+      <motion.span
+        className="text-red-400 font-bold"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
+      >
+        Full Stack Web Developer
+      </motion.span>{" "}
+      with a strong focus on{" "}
+      <motion.span
+        className="text-yellow-300 font-bold"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 0.6 }}
+      >
+        Frontend Excellence
+      </motion.span>
+      . I craft sleek,{" "}
+      <span className="italic text-gray-300">responsive</span>, and{" "}
+      <span className="italic text-gray-300">high-performance</span> applications powered by{" "}
+      <motion.span
+        className="text-green-400"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.6 }}
+      >
+        React
+      </motion.span>
+      ,{" "}
+      <motion.span
+        className="text-blue-400"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2, duration: 0.6 }}
+      >
+        Node.js
+      </motion.span>{" "}
+      and{" "}
+      <motion.span
+        className="text-emerald-300"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2.5, duration: 0.6 }}
+      >
+        MongoDB
+      </motion.span>
+      .
+      <br />
+      <br />
+      With{" "}
+      <span className="text-orange-300 font-semibold">a Bachelor’s degree in Computer Science</span>{" "}
+      and hands-on experience in both{" "}
+      <span className="text-cyan-300">frontend</span> and{" "}
+      <span className="text-pink-300">backend</span> development, I specialize in turning complex
+      ideas into{" "}
+      <span className="italic text-gray-300">user-friendly digital experiences</span>. I thrive in
+      environments where innovation meets problem-solving — whether it’s{" "}
+      <span className="text-green-400">designing smooth UIs</span> or{" "}
+      <span className="text-blue-400">optimizing APIs</span>.
+      <br />
+     
+    </motion.p>
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
             <Link
               to="/projects"
@@ -87,7 +153,7 @@ export const Hero = () => {
         <motion.img
           src={photo}// Replace with your photo
           alt="Royel Ali"
-          className="w-64 h-64 rounded-full shadow-lg object-cover"
+          className="w-100 h-100 m-1 p-1 rounded-full shadow-lg object-cover"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}

@@ -14,8 +14,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white sticky top-0 z-9999 shadow-md    w-full ">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <nav className=" sticky top-0 z-9999 my-2 shadow-md lg:border-white lg:border-2 mx-10 rounded-4xl ">
+      <div className="max-w-6xl  mx-auto px-4 py-3 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex">
    <FaSun size={30} className='mr-4 mt-1.5 border bg-black text-white rounded-full p-1'/>
@@ -41,7 +41,7 @@ const Navbar = () => {
       }}
     >
     
-    Portfolio
+    ROYEL
     </motion.label>
           {/* <h1 className="text-2xl font-bold text-indigo-600 cursor-pointer">
           
@@ -49,15 +49,15 @@ const Navbar = () => {
         </div>
 
         {/* Center: Nav Links */}
-        <div className="hidden md:flex flex-1 justify-center space-x-6">
+        <div className="hidden  md:flex flex-1 justify-center space-x-6">
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
                 isActive
-                  ? 'text-indigo-600 font-semibold'
-                  : 'text-gray-700 hover:text-indigo-600'
+                  ? 'bg-blue-400 px-6 rounded-3xl text-white font-bold'
+                  : 'text-green-400 font-bold  hover:text-indigo-600'
               }
             >
               {link.name}
@@ -74,7 +74,7 @@ const Navbar = () => {
   rel="noopener noreferrer"
   className="hidden md:inline-block px-4 py-2 border bg-green-600 text-white hover:shadow-xl rounded hover:bg-indigo-600 hover:text-white transition"
 >
-  Resume
+ Download Resume
 </a>
 
 
@@ -82,7 +82,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-800 focus:outline-none"
+              className="text-white focus:outline-none"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -93,15 +93,15 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white px-6 pb-4">
+        <div className="md:hidden text-center px-6 pb-4">
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
                 isActive
-                  ? 'block py-2 text-indigo-600 font-semibold'
-                  : 'block py-2 text-gray-700 hover:text-indigo-600'
+                  ? 'block py-2  bg-blue-400 px-6 rounded-3xl text-white font-bold'
+                  : 'block py-2 font-bold text-green-600 hover:text-indigo-600'
               }
               onClick={() => setIsOpen(false)}
             >

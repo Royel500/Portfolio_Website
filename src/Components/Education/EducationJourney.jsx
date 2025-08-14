@@ -11,7 +11,7 @@ const EducationJourney = () => {
       institution: "Bholahat Mohbullah College",
       years: "2021 - 2023",
       icon: FaSchool,
-      cardBg: "bg-blue-200", // Added background color
+      cardBg: "bg-base-200", // Added background color
       achievements: [
         { text: "GPA: 4.67 [Science]", icon: FaStar },
         { text: "Math, Higher Math", icon: PiMathOperationsFill },
@@ -25,9 +25,9 @@ const EducationJourney = () => {
         institution: "Bholahat Mohbullah College",
       years: "2023 - Present",
       icon: FaGraduationCap,
-       cardBg: "bg-blue-200",// Added background color
+       cardBg: "bg-base-200",// Added background color
       achievements: [
-        { text: "Python Programming", icon: FaLaptopCode },
+        { text: " Programming", icon: FaLaptopCode },
         { text: "Java Programming", icon: FaLaptopCode },
         { text: "Web Development", icon: FaLaptopCode },
         { text: "Frontend Development", icon: FaLaptopCode },
