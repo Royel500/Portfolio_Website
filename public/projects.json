@@ -1,64 +1,53 @@
 [
   {
     "id": 1,
-    "title": "Tourism Management System  ",
-    "description": "A responsive React app to showcase top doctors with profiles, specializations, and availability.",
-    "tech": ["React", "Firebase", "Stripe", "Tailwind"],
+    "title": "Tourism Management System",
+    "description": "Tourism Management System showcases tour packages, guides, bookings, Stripe payments, Firebase authentication, and responsive UI with Tailwind CSS, Material Tailwind, and DaisyUI for seamless navigation and modern design.",
+    "tech": ["React", "Node.js", "Express.js", "MongoDB", "Firebase Auth", "Tailwind CSS", "Material Tailwind", "DaisyUI", "Stripe"],
     "github": "https://github.com/Royel500/-Tourism-Management-System.git",
     "live": "https://assignment-12-d9ae1.web.app/",
     "image": "https://i.postimg.cc/85hr91Qh/Tourism-Projects.png",
-    "challenge": "Integrating Stripe for secure payments and handling different error responses from the API was tricky and required reading a lot of documentation."
+    "challenge": "Integrating Stripe for secure payments and handling different error responses from the API was tricky. Managing user authentication with Firebase, syncing real-time bookings, and ensuring a fully responsive UI across devices added extra complexity. Optimizing performance for large datasets and implementing smooth animations for package cards were also challenges."
   },
   {
     "id": 2,
-    "title": "Delivery Management System ",
-    "description": "A responsive React app to showcase top doctors with profiles, specializations, and availability.",
-    "tech": ["React", "Firebase", "Stripe", "Tailwind"],
+    "title": "Delivery Management System",
+    "description": "Delivery Management System manages parcels, riders, assignments, tracking, and payments using Stripe. Built with React, Node.js, Express, MongoDB, and Firebase authentication with a responsive dashboard.",
+    "tech": ["React", "Node.js", "Express.js", "MongoDB", "Firebase Auth", "Tailwind CSS", "Material Tailwind", "DaisyUI", "Stripe"],
     "github": "https://github.com/Royel500/Final_Projects-Clint.git",
-    "live": "https://final_projects-rs-.web.app",
+    "live": "https://final-projects-30822.web.app",
     "image": "https://i.postimg.cc/TYZfLnW3/Rider-Projects.png",
-    "challenge": "Integrating Stripe for secure payments and handling different error responses from the API was tricky and required reading a lot of documentation."
+    "challenge": "Integrating Stripe for secure payments and handling API errors was challenging. Implementing real-time parcel tracking, rider assignment logic, role-based access control, and a responsive dashboard took extra effort. Ensuring proper data validation and error handling across multiple endpoints was complex."
   },
-  
-  {
-    "id": 3,
-    "title": "Your Trusted Healthcare Professionals",
-    "description": "A responsive React app to showcase top doctors with profiles, specializations, and availability.",
-    "tech": ["React", "Firebase", "Tailwind"],
-    "github": "https://github.com/Royel500/All_Doctors.git",
-    "live": "https://tranquil-pothos-01e2ab.netlify.app/",
-    "image": "https://i.postimg.cc/JzGKjZYF/Screenshot-2025-06-28-222609.png",
-    "challenge": "Integrating Stripe for secure payments and handling different error responses from the API was tricky and required reading a lot of documentation."
-  },
+
   {
     "id": 4,
     "title": "Gardening Tips App",
-    "description": "A platform where gardeners can share tips. Features login, CRUD operations, and public/private tip visibility. Built with MongoDB and Express.",
-    "tech": ["React", "Express", "MongoDB", "DaisyUI"],
+    "description": "Gardening Tips App allows gardeners to share tips, manage posts with public/private visibility, and interact. Built with React, Node.js, Express, MongoDB, and Firebase authentication with responsive UI.",
+    "tech": ["React", "Node.js", "Express.js", "MongoDB", "Firebase Auth", "Tailwind CSS", "Material Tailwind", "DaisyUI"],
     "github": "https://github.com/Royel500/Prjects.git",
     "live": "https://assignment-rs-10.web.app",
     "image": "https://i.postimg.cc/85c262G8/Screenshot-2025-06-28-215136.png",
-    "challenge": "Building a secure system for public vs private tips and making sure user-based access control worked correctly across CRUD operations."
-
+    "challenge": "Ensuring proper public vs private tip visibility and secure user-based access control across CRUD operations was challenging. Implementing real-time updates, responsive UI design, and a smooth user experience while handling multiple user roles required careful backend and frontend integration."
   },
   {
     "id": 5,
     "title": "Assignment Portal",
-    "description": "A student-teacher assignment management system. Teachers can create, view, and mark assignments. Students can submit via Google Docs links.",
-    "tech": ["React", "MongoDB", "Firebase", "React Router"],
+    "description": "Assignment Portal enables teachers to create, view, and mark assignments, while students submit work via Google Docs. Built with React, Node.js, MongoDB, Firebase authentication, and responsive Tailwind UI.",
+    "tech": ["React", "Node.js", "Express.js", "MongoDB", "Firebase Auth", "Tailwind CSS", "Material Tailwind", "DaisyUI", "React Router"],
     "github": "https://github.com/Royel500/Assignment_11.git",
     "live": "https://assignment-11-c11e7.web.app",
     "image": "https://i.postimg.cc/T16PGVFH/Screenshot-2025-06-28-220504.png",
-    "challenge": "Making sure teachers couldn't mark their own submissions and handling real-time data syncing between roles was a fun challenge."
+    "challenge": "Preventing teachers from marking their own submissions, handling real-time data syncing between students and teachers, and integrating Google Docs links were major challenges. Implementing secure role-based access and responsive UI for multiple screens required careful design and testing."
   },
- {
-  "id": 6,
-  "title": "Dragon News",
-  "description": "A modern news portal built with React, React Router, and Firebase authentication. It allows users to read news articles, view categories, and log in to access premium content.",
-  "tech": ["React", "React Router", "Firebase", "Bootstrap", "Context API"],
-  "github": "https://github.com/Royel500/Dragon-News.git",
-  "live": "https://dragon-news-cea9e.web.app/",
-  "image": "https://i.postimg.cc/SRTHVq67/Screenshot-2025-06-28-220845.png",
-  "challenge": "Setting up protected routes for premium content and integrating Firebase authentication with route-level access control was a key learning experience."
-}
+  {
+    "id": 6,
+    "title": "Dragon News",
+    "description": "Dragon News is a modern news portal with articles, categories, premium content, and protected routes. Built with React, Firebase authentication, React Router, Tailwind CSS, and responsive design.",
+    "tech": ["React", "React Router", "Firebase Auth", "Tailwind CSS", "Material Tailwind", "DaisyUI", "Node.js", "Express.js", "MongoDB"],
+    "github": "https://github.com/Royel500/Dragon-News.git",
+    "live": "https://dragon-news-cea9e.web.app/",
+    "image": "https://i.postimg.cc/SRTHVq67/Screenshot-2025-06-28-220845.png",
+    "challenge": "Setting up protected routes for premium content and integrating Firebase authentication with route-level access control was complex. Managing dynamic articles, categories, and responsive layout while maintaining smooth performance required careful state management and component optimization."
+  }
 ]

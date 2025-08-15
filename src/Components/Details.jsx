@@ -42,28 +42,39 @@ const Details = () => {
       initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 10, y: 10 }}
           transition={{ duration: 1 }}
-    className="min-h-screen z-0 mt-30 rounded px-6 py-12 bg-white max-w-5xl mx-auto">
+    className=" z-0 mt-30 rounded  py-12  max-w-5xl mx-auto">
       <Link
         to="/projects"
-        className="text-indigo-600 hover:underline text-[25px] mb-4 inline-block"
+        className="text-green-500 hover:underline text-[25px] mb-4 inline-block"
       >
         ← Back to Projects
       </Link>
 
-      <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full md:w-1/2 object-cover h-64 md:h-auto"
-        />
+      <div className=" rounded-2xl shadow-lg overflow-hidde flex flex-col md:flex-row">
+<motion.div
+  className="overflow-hidden w-full md:w-1/2 h-64 md:h-auto relative"
+>
+  <motion.img
+    src={project.image}
+    alt={project.title}
+    className="absolute top-7 rounded-2xl left-0 w-full h-115 "
+    initial={{ x: "100%" }}        
+    animate={{ x: "0%" }}         
+    transition={{
+      duration: 3,                
+      ease: "easeOut",       
+    }}
+  />
+</motion.div>
 
-        <div className="p-6 flex-1">
+
+        <div className="p-6 text-white flex-1">
            
           <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
           <h1 className='font-bold '>Description:</h1>
-          <p className="text-gray-700 mb-4">{project.description}</p>
+          <p className=" mb-4">{project.description}</p>
           <h1 className='font-bold '>Challenge:</h1>
-          <p className="text-gray-700 mb-4">  {project.challenge}</p>
+          <p className=" mb-4">  {project.challenge}</p>
             <h1 className='font-bold '> Tec :</h1>
           <div className="flex flex-wrap gap-2 mb-6">
             {project.tech.map((tech, index) => (
@@ -81,7 +92,8 @@ const Details = () => {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 border border-gray-700 rounded-lg text-gray-700 hover:bg-gray-100"
+               className="flex  px-2 items-center gap-2 border
+             text-white bg-black rounded hover:bg-green-700 transition"
             >
               View GitHub
             </a>
@@ -90,7 +102,8 @@ const Details = () => {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+                className="flex  px-2 py-1 items-center gap-2 border
+             text-white bg-black rounded hover:bg-green-700 transition"
               >
                 Live Demo
               </a>

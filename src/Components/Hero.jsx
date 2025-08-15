@@ -16,7 +16,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-red-200 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Hi, I'm <span className="text-green-600">Royel Ali</span>
           </h1>
 
@@ -34,14 +34,15 @@ export const Hero = () => {
 
 
          <motion.p
-      className="text-lg text-white max-w-2xl my-6 leading-relaxed"
+      className="text-lg text-white text-justify
+      px-2 max-w-2xl my-6 leading-relaxed"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
       🚀 A passionate{" "}
       <motion.span
-        className="text-red-400 font-bold"
+        className="text-green-400 font-bold"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.6 }}
@@ -50,7 +51,7 @@ export const Hero = () => {
       </motion.span>{" "}
       with a strong focus on{" "}
       <motion.span
-        className="text-yellow-300 font-bold"
+        className="text-green-300 font-bold"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.6 }}
@@ -70,7 +71,7 @@ export const Hero = () => {
       </motion.span>
       ,{" "}
       <motion.span
-        className="text-blue-400"
+        className="text-green-400"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 0.6 }}
@@ -90,28 +91,28 @@ export const Hero = () => {
       <br />
       <br />
       With{" "}
-      <span className="text-orange-300 font-semibold">a Bachelor’s degree in Computer Science</span>{" "}
+      <span className="text-green-300 font-semibold">a Bachelor’s degree in Computer Science</span>{" "}
       and hands-on experience in both{" "}
-      <span className="text-cyan-300">frontend</span> and{" "}
-      <span className="text-pink-300">backend</span> development, I specialize in turning complex
+      <span className="text-green-300">frontend</span> and{" "}
+      <span className="text-green-300">backend</span> development, I specialize in turning complex
       ideas into{" "}
       <span className="italic text-gray-300">user-friendly digital experiences</span>. I thrive in
       environments where innovation meets problem-solving — whether it’s{" "}
       <span className="text-green-400">designing smooth UIs</span> or{" "}
-      <span className="text-blue-400">optimizing APIs</span>.
+      <span className="text-green-400">optimizing APIs</span>.
       <br />
      
     </motion.p>
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
             <Link
               to="/projects"
-     className="px-6 py-2 bg-indigo-500 border text-white rounded-xl  hover:bg-indigo-700 transition"
+  className="hidden md:inline-block px-4 py-2 border bg-green-600 text-white hover:shadow-xl rounded hover:bg-indigo-600 hover:text-white transition"
             >
               View Projects
             </Link>
             <div
              
-      className="px-6 py-2 border bg-indigo-500 text-white rounded-xl  transition"
+  className="hidden md:inline-block px-4 py-2 border bg-green-600 text-white hover:shadow-xl rounded hover:bg-indigo-600 hover:text-white transition"
             >
             <a
           href="./public/Resume.pdf"
@@ -121,7 +122,8 @@ export const Hero = () => {
         </a>
             </div>
 
-            <div className="flex justify-center text-white bg-indigo-500 items-center space-x-6 border rounded-xl py-2 px-2">
+            <div className="flex justify-centerbg-green-600 text-white bg-green-600
+             hover:bg-indigo-600 hover:text-white transitionitems-center space-x-6 border rounded py-2 px-2">
           <a
             href="https://github.com/Royel500"
             target="_blank"

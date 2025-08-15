@@ -33,8 +33,8 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className=" text-white py-2 px-6">
-      <h2 className="text-4xl font-bold text-center italic  mb-12">
+    <section className="text-white mt-10 lg:mt-20">
+      <h2 className="text-4xl font-bold text-center italic ">
         Experience
       </h2>
 

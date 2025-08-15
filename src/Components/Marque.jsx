@@ -9,7 +9,7 @@ const IntentionMarquee = () => {
           I am passionate about becoming a professional Full Stack Developer 
           — focused on building clean, scalable, and user-friendly web apps.
         </p>
-        <p className="text-pink-800 text-lg font-medium mx-8">
+        <p className="text-red-600 text-lg font-medium mx-8">
           Always learning. Always building. Always improving. 🚀
         </p>
       </Marquee>

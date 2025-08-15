@@ -11,7 +11,7 @@ const Projects = () => {
       .catch(err => console.error('Failed to load projects:', err));
   }, []);
   return (
-    <section className="min-h-screen   py-12 px-6">
+    <section className="min-h-screen mt-18 lg:mt-30 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-white italic
           my-5 text-center">
@@ -26,7 +26,7 @@ const Projects = () => {
                     delaySpeed={1000}
                   />
           </h2>
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col">
           {projectList.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

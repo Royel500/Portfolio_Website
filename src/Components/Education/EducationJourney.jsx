@@ -11,7 +11,7 @@ const EducationJourney = () => {
       institution: "Bholahat Mohbullah College",
       years: "2021 - 2023",
       icon: FaSchool,
-      cardBg: "bg-base-200", // Added background color
+      cardBg: "bg-gray-300", // Added background color
       achievements: [
         { text: "GPA: 4.67 [Science]", icon: FaStar },
         { text: "Math, Higher Math", icon: PiMathOperationsFill },
@@ -25,7 +25,7 @@ const EducationJourney = () => {
         institution: "Bholahat Mohbullah College",
       years: "2023 - Present",
       icon: FaGraduationCap,
-       cardBg: "bg-base-200",// Added background color
+       cardBg: "bg-gray-300",// Added background color
       achievements: [
         { text: " Programming", icon: FaLaptopCode },
         { text: "Java Programming", icon: FaLaptopCode },
@@ -36,7 +36,7 @@ const EducationJourney = () => {
   ];
 
   return (
-    <section className="min-h-screen my-10 rounded-2xl py-16 px-4 ">
+    <section className=" mt-15 rounded-2xl px-4 ">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-white  text-center mb-4 ">
           Education Journey

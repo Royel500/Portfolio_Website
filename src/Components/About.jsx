@@ -31,17 +31,7 @@ const About = () => {
     chemical industry expertise and cutting-edge web technologies.
   </p>
 
-  <p className="text-white text-lg">
-    While working in the chemical sector, I've developed a unique perspective that allows me
-     to create specialized web solutions for industrial applications. My technical toolkit spans both 
-     frontend and backend technologies, and I'm continuously expanding my skills to stay at the forefront of
-      web development.
-  </p>
 
-  <p className="text-white text-lg">
-    What drives me is the opportunity to merge my formal education, professional experience in chemicals,
-     and software development skills to build transformative digital experiences that make a real-world impact.
-  </p>
 
   {/* My Journey into Programming */}
   <p className="text-white text-lg">
@@ -58,19 +48,9 @@ const About = () => {
     backend performance, I find fulfillment in creating solutions that users genuinely enjoy.
   </p>
 
-  {/* Beyond the Code */}
-  <p className="text-white text-lg">
-    <span className="text-red-400">Beyond the Code:</span> When I’m not coding, I enjoy reading tech blogs, 
-    experimenting with new tools, and playing strategy-based games. I’m also passionate about photography and
-     outdoor adventures, which keep my creativity alive.
-  </p>
 
-  {/* My Approach to Work */}
-  <p className="text-white text-lg">
-    <span className="text-red-400">My Approach to Work:</span> I believe in writing clean, maintainable,
-     and scalable code. I value teamwork, continuous learning, and a problem-solving mindset. I’m equally
-      comfortable taking ownership of a project or collaborating within a cross-functional team.
-  </p>
+
+
 
   {/* Looking Ahead */}
   <p className="text-white text-lg">
