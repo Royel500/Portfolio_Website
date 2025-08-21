@@ -68,16 +68,17 @@ const Navbar = () => {
         {/* Right: Resume Button & Hamburger */}
         <div className="flex items-center space-x-4">
           {/* Resume button - hidden on mobile */}
-      <a
-  href="https://drive.google.com/file/d/1BrTg2q2esSum0FJKOrNA-FYHxj5Js_Dt/view?usp=sharing"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hidden md:inline-block px-4 py-2 border bg-green-600 text-white hover:shadow-xl rounded hover:bg-indigo-600 hover:text-white transition"
->
- Download Resume
-</a>
+     
 
+ <a
+          href="./public/Resume.pdf"
+          download="Royel_Resume.pdf" 
+           className="block mt-4 px-4 py-2 border transition bg-green-600 hover:bg-black text-white "
+        >
+          Download Resume
+        </a>
 
+        
           {/* Mobile Hamburger */}
           <div className="md:hidden">
             <button
@@ -110,14 +111,14 @@ const Navbar = () => {
           ))}
           {/* Also add resume button in mobile menu */}
           <a
-            href="/resume.pdf"
+            href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="block mt-4 px-4 py-2 border transition bg-green-600
              text-white rounded hover:bg-indigo-600 hover:text-white hover:shadow-xl text-center"
             onClick={() => setIsOpen(false)}
           >
-            Resume
+            Download Resume 
           </a>
         </div>
       )}

@@ -106,24 +106,26 @@ export const Hero = () => {
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
             <Link
               to="/projects"
-  className="hidden md:inline-block px-4 py-2 border bg-green-600 text-white hover:shadow-xl rounded hover:bg-indigo-600 hover:text-white transition"
+  className="hidden md:inline-block px-4 py-2 border bg-green-600 text-white hover:shadow-xl rounded hover:bg-black  transition"
             >
               View Projects
             </Link>
             <div
              
-  className="hidden md:inline-block px-4 py-2 border bg-green-600 text-white hover:shadow-xl rounded hover:bg-indigo-600 hover:text-white transition"
+  className="hidden md:inline-block px-4 py-2 border bg-green-600 text-white hover:shadow-xl rounded hover:bg-black
+    transition"
             >
             <a
           href="./public/Resume.pdf"
           download="Royel_Resume.pdf" 
+
         >
           Download Resume
         </a>
             </div>
 
-            <div className="flex justify-centerbg-green-600 text-white bg-green-600
-             hover:bg-indigo-600 hover:text-white transitionitems-center space-x-6 border rounded py-2 px-2">
+            <div className="flex justify-center  text-white bg-green-600
+             hover:bg-black  transitionitems-center space-x-6 border rounded py-2 px-2">
           <a
             href="https://github.com/Royel500"
             target="_blank"
