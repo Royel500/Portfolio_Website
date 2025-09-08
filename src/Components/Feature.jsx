@@ -37,10 +37,11 @@ const Features = () => {
           animate={{ opacity: 21, y: 10 }}
           transition={{ duration: 1 }}
             key={idx}
-            className="bg-gray-300 font-bold transition-transform duration-300 hover:scale-95 rounded-xl p-6 text-center flex flex-col items-center shadow-sm hover:shadow-md "
+            className="bg-gray-500 font-bold transition-transform duration-300 hover:scale-95
+            hover:shadow-fuchsia-500 rounded-xl p-6 text-center flex flex-col items-center shadow-sm hover:shadow-md "
           >
-            <div className="text-teal-700 font-bold  mb-4">{item.icon}</div>
-            <p className="text-gray-700  font-bold ">{item.title}</p>
+            <div className="text-white font-bold  mb-4">{item.icon}</div>
+            <p className="text-white font-bold ">{item.title}</p>
           </motion.div>
         ))}
       </div>

@@ -1,21 +1,22 @@
-/* Radial red glow background animation */
+
+
+/* Cosmic red starry background */
 .subtle-red-glow {
   background: black;
-  background-image: radial-gradient(rgba(255,0,0,0.15) 1%, transparent 15%);
+  background-image: 
+    radial-gradient(circle, rgba(255,0,0,0.6) 5px, transparent 3px),
+    radial-gradient(circle, rgba(255,0,0,0.4) 3px, transparent 2px),
+    radial-gradient(circle, rgba(255,0,0,0.2) 10px, transparent 2px);
   background-repeat: repeat;
-  background-size: 4000px 4000px;  /* Increase this value */
-  animation: subtleRedGlow 8s ease-in-out infinite;
+  background-size: 200px 200px, 300px 300px, 400px 400px; 
+  animation: cosmicGlow 10s linear infinite;
 }
 
-@keyframes subtleRedGlow {
-  0%, 100% {
-    background-size: 100px 100px;
-    background-position: 0 0;
+@keyframes cosmicGlow {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
   }
-  50% {
-    background-size: 120px 120px;
-    background-position: 20px 20px;
+  100% {
+       background-position: 1000px 1000px, 2000px 3000px, 4000px 4000px; 
   }
 }
-
-

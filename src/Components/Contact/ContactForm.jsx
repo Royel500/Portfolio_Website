@@ -58,6 +58,7 @@ const ContactForm = () => {
   return (
     <div className="bg-gra p-8 rounded-xl font-bold border shadow-md">
       <h3 className="text-2xl font-semibold  mb-6">Send a Message</h3>
+      <p>  Message Will receive by email </p>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
           <label htmlFor="name" className="block text-sm font-medium  mb-1">
@@ -125,7 +126,8 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="flex items-center justify-center w-full bg-green-400 py-3 px-4 rounded-md hover:bg-blue-700 transition-colors"
+          className="flex items-center justify-center w-full bg-green-400 
+          py-3 px-4 rounded-md hover:shadow-pink-500 transform-3d "
         >
           <FiSend className="mr-2" />
           Send Message

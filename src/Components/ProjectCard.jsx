@@ -10,7 +10,7 @@ const ProjectCard = ({project}) => {
   return (
     <motion.div
       className="flex my-5 flex-col md:flex-row 
- p-10 rounded-2xl shadow-md overflow-hidden border text-white border-white
+ p-10 rounded-2xl text-justify shadow-md overflow-hidden border text-white border-white
   hover:shadow-xl bg- transition"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}

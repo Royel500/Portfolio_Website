@@ -11,7 +11,7 @@ const Details = () => {
     fetch('/projects.json') // Public folder path
       .then(res => res.json())
       .then(data => {
-        const currentProject = data.find(p => p.id === parseInt(id)); // Match by id
+        const currentProject = data.find(p => p.id === parseInt(id));
         if (currentProject) {
           setProject(currentProject);
           setNotFound(false);
@@ -23,7 +23,7 @@ const Details = () => {
 
   if (notFound) {
     return (
-      <div className="min-h-screen  flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <p className="text-xl text-red-500">Project not found</p>
       </div>
     );
@@ -37,45 +37,72 @@ const Details = () => {
     );
   }
 
+  // Staggered animation for title, description, challenge
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.5, // sequential animation
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { x: "100%", opacity: 0 },
+    visible: { x: "0%", opacity: 1, transition: { duration: 1, ease: "easeOut" } },
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 10, y: 10 }}
-          transition={{ duration: 1 }}
-    className=" z-0 mt-30 rounded  py-12  max-w-5xl mx-auto">
-      <Link
-        to="/projects"
-        className="text-green-500 hover:underline text-[25px] mb-4 inline-block"
-      >
-        ← Back to Projects
-      </Link>
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="lg:mt-30 mt-20 max-w-5xl mx-auto text-white"
+    >
+      {/* Back Link */}
+<Link to="/projects" className="text-green-500 hover:underline text-[25px] mb-4 inline-block" >
+ ← Back to Projects </Link>
 
-      <div className=" rounded-2xl shadow-lg overflow-hidde flex flex-col md:flex-row">
-<motion.div
-  className="overflow-hidden w-full md:w-1/2 h-64 md:h-auto relative"
->
-  <motion.img
-    src={project.image}
-    alt={project.title}
-    className="absolute top-7 rounded-2xl left-0 w-full h-115 "
-    initial={{ x: "100%" }}        
-    animate={{ x: "0%" }}         
-    transition={{
-      duration: 3,                
-      ease: "easeOut",       
-    }}
-  />
-</motion.div>
+      {/* Main Card */}
+      <div className="rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row ">
+        {/* Image */}
+        <motion.div className="overflow-hidden w-full md:w-1/2 h-72 md:h-auto relative">
 
+         <motion.img src={project.image} alt={project.title} 
+         className="absolute top-7 rounded-2xl left-0 w-full h-110 mx-1 p-1" 
+         initial={{ x: "-100%" }} 
+         animate={{ x: "1%" }}
+          transition={{ duration: 3,
+           ease: "easeOut", }} />
 
-        <div className="p-6 text-white flex-1">
-           
-          <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-          <h1 className='font-bold '>Description:</h1>
-          <p className=" mb-4">{project.description}</p>
-          <h1 className='font-bold '>Challenge:</h1>
-          <p className=" mb-4">  {project.challenge}</p>
-            <h1 className='font-bold '> Tec :</h1>
+        </motion.div>
+
+        {/* Content */}
+        <motion.div
+          className="p-6 flex-1"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          {/* Title */}
+          <motion.h1 variants={itemVariants} className="text-3xl font-bold mb-4">
+            {project.title}
+          </motion.h1>
+
+          {/* Description */}
+          <h2 className="font-bold text-justify">Description:</h2>
+          <motion.p variants={itemVariants} className="mb-4">
+            {project.description}
+          </motion.p>
+
+          {/* Challenge */}
+          <h2 className="font-bold">Challenge:</h2>
+          <motion.p variants={itemVariants} className="mb-4 text-justify">
+            {project.challenge}
+          </motion.p>
+
+          {/* Tech Stack */}
+          <h2 className="font-bold">Tech:</h2>
           <div className="flex flex-wrap gap-2 mb-6">
             {project.tech.map((tech, index) => (
               <span
@@ -87,13 +114,13 @@ const Details = () => {
             ))}
           </div>
 
+          {/* Links */}
           <div className="flex gap-4">
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-               className="flex  px-2 items-center gap-2 border
-             text-white bg-black rounded hover:bg-green-700 transition"
+              className="flex items-center gap-2 px-4 py-2 bg-black text-white border rounded hover:bg-green-700 transition"
             >
               View GitHub
             </a>
@@ -102,14 +129,13 @@ const Details = () => {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex  px-2 py-1 items-center gap-2 border
-             text-white bg-black rounded hover:bg-green-700 transition"
+                className="flex items-center gap-2 px-4 py-2 bg-black text-white border rounded hover:bg-green-700 transition"
               >
                 Live Demo
               </a>
             )}
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

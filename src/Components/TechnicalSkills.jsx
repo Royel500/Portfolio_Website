@@ -1,5 +1,7 @@
 import { style } from 'framer-motion/client';
 import React from 'react';
+import { motion } from "framer-motion";
+
 import {
   FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaGithub, FaStripe,
   FaNodeJs,
@@ -56,6 +58,20 @@ const SkillBox = ({ title, color, items }) => (
 );
 
 const TechnicalSkills = () => {
+const containerVariants = {
+    hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.3, // প্রতিটি box 0.3s delay সহ আসবে
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { y: 50, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
   return (
     <>
    
@@ -67,11 +83,24 @@ const TechnicalSkills = () => {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-6 justify-center items-start">
-        <SkillBox title="Frontend Development"  items={skills.frontend} />
-        <SkillBox title="Backend & Database"  items={skills.backend} />
-        <SkillBox title="Tools & Platforms"  items={skills.tools} />
-      </div>
+  <motion.div
+      className="flex flex-col md:flex-row gap-6 justify-center items-start"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.div variants={itemVariants}>
+        <SkillBox title="Frontend Development" items={skills.frontend} />
+      </motion.div>
+
+      <motion.div variants={itemVariants}>
+        <SkillBox title="Backend & Database" items={skills.backend} />
+      </motion.div>
+
+      <motion.div variants={itemVariants}>
+        <SkillBox title="Tools & Platforms" items={skills.tools} />
+      </motion.div>
+    </motion.div>
           
       <div>
         {/* <!-- Additional Skills & Knowledge Section --> */}
