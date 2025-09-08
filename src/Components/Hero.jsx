@@ -42,7 +42,7 @@ export const Hero = () => {
     >
       🚀 A passionate{" "}
       <motion.span
-        className="text-green-400 font-bold"
+        className="text-green-600 font-bold"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.6 }}
@@ -51,7 +51,7 @@ export const Hero = () => {
       </motion.span>{" "}
       with a strong focus on{" "}
       <motion.span
-        className="text-green-300 font-bold"
+        className="text-green-600 font-bold"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.6 }}
@@ -62,7 +62,7 @@ export const Hero = () => {
       <span className="italic text-gray-300">responsive</span>, and{" "}
       <span className="italic text-gray-300">high-performance</span> applications powered by{" "}
       <motion.span
-        className="text-green-400"
+        className="text-green-600"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.6 }}
@@ -71,7 +71,7 @@ export const Hero = () => {
       </motion.span>
       ,{" "}
       <motion.span
-        className="text-green-400"
+        className="text-green-600"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 0.6 }}
@@ -80,7 +80,7 @@ export const Hero = () => {
       </motion.span>{" "}
       and{" "}
       <motion.span
-        className="text-emerald-300"
+        className="text-emerald-600"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2.5, duration: 0.6 }}
@@ -91,15 +91,15 @@ export const Hero = () => {
       <br />
       <br />
       With{" "}
-      <span className="text-green-300 font-semibold">a Bachelor’s degree in Computer Science</span>{" "}
+      <span className="text-green-600 font-semibold">a Bachelor’s degree in Computer Science</span>{" "}
       and hands-on experience in both{" "}
-      <span className="text-green-300">frontend</span> and{" "}
-      <span className="text-green-300">backend</span> development, I specialize in turning complex
+      <span className="text-green-600">frontend</span> and{" "}
+      <span className="text-green-600">backend</span> development, I specialize in turning complex
       ideas into{" "}
       <span className="italic text-gray-300">user-friendly digital experiences</span>. I thrive in
       environments where innovation meets problem-solving — whether it’s{" "}
-      <span className="text-green-400">designing smooth UIs</span> or{" "}
-      <span className="text-green-400">optimizing APIs</span>.
+      <span className="text-green-600">designing smooth UIs</span> or{" "}
+      <span className="text-green-600">optimizing APIs</span>.
       <br />
      
     </motion.p>
@@ -157,7 +157,7 @@ export const Hero = () => {
         <motion.img
           src={photo}// Replace with your photo
           alt="Royel Ali"
-          className="w-100 h-100 m-1 p-1 rounded-full shadow-lg object-cover"
+          className="w-100 h-100 m-1 p-1 rounded-full shadow-lg "
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}

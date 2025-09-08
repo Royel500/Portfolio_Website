@@ -11,7 +11,6 @@ const EducationJourney = () => {
       institution: "Bholahat Mohbullah College",
       years: "2021 - 2023",
       icon: FaSchool,
-      cardBg: "bg-gray-300", // Added background color
       achievements: [
         { text: "GPA: 4.67 [Science]", icon: FaStar },
         { text: "Math, Higher Math", icon: PiMathOperationsFill },
@@ -25,23 +24,22 @@ const EducationJourney = () => {
         institution: "Bholahat Mohbullah College",
       years: "2023 - Present",
       icon: FaGraduationCap,
-       cardBg: "bg-gray-300",// Added background color
       achievements: [
-        { text: " Programming", icon: FaLaptopCode },
-        { text: "Java Programming", icon: FaLaptopCode },
-        { text: "Web Development", icon: FaLaptopCode },
-        { text: "Frontend Development", icon: FaLaptopCode },
+        { text: "Political Science", icon: FaLaptopCode },
+        { text: "Sociology", icon: FaLaptopCode },
+        { text: "Logic ", icon: FaLaptopCode },
+        { text: "English", icon: FaLaptopCode },
       ]
     }
   ];
 
   return (
-    <section className=" mt-15 rounded-2xl px-4 ">
+    <section className=" mt-15 rounded-2xl px-4 text-white ">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold text-white  text-center mb-4 ">
+        <h1 className="text-4xl md:text-5xl font-bold  text-center mb-4 ">
           Education Journey
         </h1>
-        <p className="text-lg text-white text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-lg  text-center mb-12 max-w-2xl mx-auto">
           My academic path and specialization in science and technology disciplines
         </p>
 
