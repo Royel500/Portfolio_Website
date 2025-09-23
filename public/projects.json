@@ -9,6 +9,26 @@
     "image": "https://i.postimg.cc/85hr91Qh/Tourism-Projects.png",
     "challenge": "Integrating Stripe for secure payments and handling different error responses from the API was tricky. Managing user authentication with Firebase, syncing real-time bookings, and ensuring a fully responsive UI across devices added extra complexity. Optimizing performance for large datasets and implementing smooth animations for package cards were also challenges."
   },
+    {
+    "id": 3,
+    "title": "Doctor Management WebApp (Next.js) || Collaborative Team Project",
+    "description":"Developed a full-stack Doctor management system using Next.js.Implemented product add, update, and delete functionality with secure API routes.Integrated MongoDB for database operations and optimized server-side rendering (SSR) .Clean, responsive UI using Tailwind CSS and form-level validation.",
+    "tech": ["Next.js","Tailwind CSS", "Material Tailwind", "DaisyUI", "Node.js", "Express.js", "MongoDB"],
+    "github": "https://github.com/mahfuzarrahmanmunna/doctor-appointment-system.git",
+    "live": "https://appointment-management-system-black.vercel.app/",
+    "image": "https://i.postimg.cc/sxs0jNx1/Screenshot-2025-09-23-190331.png",
+    "challenge": "Setting up protected routes for premium content and integrating NextAuth authentication with route-level access control was complex. Managing dynamic articles, categories, and responsive layout while maintaining smooth performance required careful state management and component optimization."
+  },
+    {
+    "id": 3,
+    "title": "Product Add Handling WebApp (Next.js)",
+    "description":"Developed a full-stack product management system using Next.js.Implemented product add, update, and delete functionality with secure API routes.Integrated MongoDB for database operations and optimized server-side rendering (SSR) .Clean, responsive UI using Tailwind CSS and form-level validation.",
+    "tech": ["Next.js","Tailwind CSS", "Material Tailwind", "DaisyUI", "Node.js", "Express.js", "MongoDB"],
+    "github": "https://github.com/Royel500/NextJS_App",
+    "live": "https://nextjs-flax-nine-40.vercel.app/",
+    "image": "https://i.postimg.cc/G3MDxhVQ/Screenshot-2025-09-08-192338.png",
+    "challenge": "Setting up protected routes for premium content and integrating Firebase authentication with route-level access control was complex. Managing dynamic articles, categories, and responsive layout while maintaining smooth performance required careful state management and component optimization."
+  },
   {
     "id": 2,
     "title": "Delivery Management System (React.js)",
@@ -19,16 +39,7 @@
     "image": "https://i.postimg.cc/TYZfLnW3/Rider-Projects.png",
     "challenge": "Integrating Stripe for secure payments and handling API errors was challenging. Implementing real-time parcel tracking, rider assignment logic, role-based access control, and a responsive dashboard took extra effort. Ensuring proper data validation and error handling across multiple endpoints was complex."
   },
-  {
-    "id": 3,
-    "title": "Product Add Handling WebApp (Next.js)",
-    "description":"Developed a full-stack product management system using Next.js.Implemented product add, update, and delete functionality with secure API routes.Integrated MongoDB for database operations and optimized server-side rendering (SSR) .Clean, responsive UI using Tailwind CSS and form-level validation.",
-    "tech": ["Next.js","Tailwind CSS", "Material Tailwind", "DaisyUI", "Node.js", "Express.js", "MongoDB"],
-    "github": "https://github.com/Royel500/NextJS_App",
-    "live": "https://nextjs-flax-nine-40.vercel.app/",
-    "image": "https://i.postimg.cc/G3MDxhVQ/Screenshot-2025-09-08-192338.png",
-    "challenge": "Setting up protected routes for premium content and integrating Firebase authentication with route-level access control was complex. Managing dynamic articles, categories, and responsive layout while maintaining smooth performance required careful state management and component optimization."
-  },
+
   {
     "id": 4,
     "title": "Gardening Tips App (React.js)",

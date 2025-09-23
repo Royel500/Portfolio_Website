@@ -7,6 +7,8 @@ import Features from '../Components/Feature';
 import IntentionMarquee from '../Components/Marque';
 import TechnicalSkills from '../Components/TechnicalSkills';
 import App from '../App.jsx'
+import ScrollToTopButton from '../Components/ScrollToTop/ScrollToTopButton.jsx';
+import SocialSidebar from '../Components/SocialSidebar/SocialSidebar .jsx';
 const Home = () => {
   return (
     <div>
@@ -16,8 +18,12 @@ const Home = () => {
    <Hero></Hero>
    {/* <ProjectCard></ProjectCard> */}
    <Projects></Projects>
+     <ScrollToTopButton></ScrollToTopButton>
+    
    <TechnicalSkills></TechnicalSkills>
+    <SocialSidebar></SocialSidebar>
    <Features></Features>
+ 
    <About></About>
 
    </div>

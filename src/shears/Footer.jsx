@@ -135,6 +135,7 @@ const Footer = () => {
 
     </div>
   </nav>
+  
       </div>
     </footer>
   );

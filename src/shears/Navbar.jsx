@@ -3,6 +3,7 @@ import { NavLink } from 'react-router';
 import { Menu, X } from 'lucide-react';
 import { motion } from "framer-motion";
 import { FaSun } from 'react-icons/fa';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,8 +15,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className=" sticky top-0 z-9999 my-2 shadow-md lg:border-white lg:border-2 lg:mx-10 mx-2 rounded-4xl ">
+    <nav className=" sticky top-0 z-9999 my-2 shadow-md lg:border-white lg:border-2 
+    lg:mx-10 mx-2 rounded-4xl ">
+
       <div className="max-w-6xl  mx-auto px-4 py-3 flex items-center justify-between">
+
         {/* Left: Logo */}
         <div className="flex">
    <FaSun size={30} className='mr-4 mt-1.5 border bg-black text-white rounded-full p-1'/>

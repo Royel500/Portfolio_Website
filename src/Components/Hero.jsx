@@ -157,7 +157,7 @@ export const Hero = () => {
           <motion.img
             src={photo} // Replace with your photo
             alt="Royel Ali"
-            className="w-32 h-32  md:w-48 md:h-48 lg:h-100 lg:w-100 rounded-full shadow-lg object-cover"
+            className="w-70 h-70 lg:h-100 lg:w-100 rounded-full shadow-lg object-cover"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}

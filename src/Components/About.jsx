@@ -91,16 +91,13 @@ const About = () => {
         <div className='flex'>
         <Award className="w-7 h-7" />
             <p>
-           “Certified in Full-Stack Web Development      <span className='text-green-600'> From Programming Hero "</span>
+           “Certified in Full-Stack Web Development  From    <span className='text-green-600'> "Programming Hero "</span>
         </p>
         </div>
-    
-       
-   
-
         </p>
+
         <p>
-                  <span className='text-green-700 font-bold text-2xl'>  <a 
+          <span className='text-blue-400 font-bold text-2xl'>  <a 
         href="https://drive.google.com/file/d/1iJEH4Ew10ruz5gnvf4UjbEd0B2IHF4zJ/view?usp=sharing" 
         target="_blank" 
         rel="noopener noreferrer"
@@ -108,13 +105,16 @@ const About = () => {
         View Certificate
       </a>
       </span>
+
         </p>
+
         <p>
           “Successfully completed Full-Stack Web Development training covering HTML
           , CSS, JavaScript, React, Node.js, Express, and MongoDB.”
         </p>
 
-        <h1 className='text-3xl my-5 flex gap-2 font-bold'>  <FileText className="w-7 h-7 mt-2" />  Offer Letters </h1>
+        <h1 className='text-3xl my-5 flex gap-2 font-bold'>  <FileText className="w-7 h-7 mt-2" />
+          Offer Letters </h1>
          <p>
            “Secured 3 frontend developer offer letters from different organizations, 
         demonstrating strong demand for my skills in React, Next.js, and MySQL.”
